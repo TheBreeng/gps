@@ -1,0 +1,341 @@
+.home {
+    background: url(@img/home/image-1.png);
+    background-size: cover;
+    min-height: 738px;
+
+    &__container {
+        padding: 55px 170px 70px 70px;
+
+        .first-column {
+            @include flex($fd: column);
+            color: #fff;
+            width: 655px;
+
+            div {
+                height: 2px;
+                width: 462px;
+                background: #fff;
+                border-radius: 50%;
+                margin: 30px 0;
+                align-self: center;
+            }
+
+            h1,
+            h3,
+            p:last-child {
+                text-transform: uppercase;
+            }
+
+            p:last-child {
+                font-weight: 700;
+            }
+
+            h2 + p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33px;
+                margin: 30px 0 10px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            h2 {
+                font-size: 56px;
+                line-height: 60px;
+            }
+        }
+
+        .second-column {
+            margin-left: 10px;
+            form {
+                @include flex($fd: column, $ai: center);
+                width: 890px;
+                height: 461px;
+                background: $bgColor;
+                border-radius: 30px;
+                padding: 50px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                .text-wrapper {
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+
+                    p:first-child {
+                        font-weight: 800;
+                        font-size: 87px;
+                        line-height: 106px;
+                    }
+                    p:nth-child(2) {
+                        font-size: 29px;
+                        font-weight: 400;
+                        line-height: 42px;
+                    }
+                    p:last-child {
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+
+                .input-wrapper {
+                    @include flex($ai: center);
+                    width: 100%;
+
+                    input {
+                        width: 385px;
+                        height: 65px;
+                        padding: 20px;
+                        border-radius: 5px;
+                        color: #5c5c5c;
+                        font-weight: 200;
+                        font-size: 19px;
+                        line-height: 23px;
+                    }
+                }
+
+                input[type='submit'] {
+                    width: 355px;
+                    height: 65px;
+                    background: $mainColor;
+                    box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+                    border-radius: 43px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 18px;
+
+                    &:hover {
+                        border: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.advantage {
+    padding: 70px;
+
+    &__container {
+        align-items: center;
+        height: 283px;
+        border: thick double #000;
+        border-radius: 20px;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 70px;
+
+        h2 {
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 0 20px;
+        }
+
+        div {
+            @include flex($ai: center, $jc: flex-start);
+            width: 30%;
+            color: $mainColor;
+
+            img {
+                width: 80px;
+                height: 80px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.props {
+    &__container {
+        @include flex($ai: center, $fd: column);
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        .content-wrapper {
+            @include flex($ai: center);
+            flex-wrap: wrap;
+            width: 100%;
+
+            div {
+                @include flex($ai: center, $fd: column, $jc: flex-end);
+                height: 416px;
+                border: 1px solid #fff;
+
+                h4 {
+                    color: #fff;
+                }
+
+                button {
+                    margin: 20px 0 30px;
+                    box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+                    background: #fac86e;
+                    height: 46px;
+                    width: 258px;
+                }
+            }
+
+            .studies,
+            .apartments,
+            .penthouse {
+                width: 33.33333%;
+            }
+
+            .townhouses,
+            .villa {
+                width: 50%;
+            }
+
+            .studies {
+                background: url(@img/props/prop.png) no-repeat;
+                background-size: cover;
+            }
+            .apartments {
+                background: url(@img/props/prop-2.png) no-repeat;
+                background-size: cover;
+            }
+            .penthouse {
+                background: url(@img/props/prop-3.png) no-repeat;
+                background-size: cover;
+            }
+            .townhouses {
+                background: url(@img/props/prop-4.png) no-repeat;
+                background-size: cover;
+            }
+            .villa {
+                background: url(@img/props/prop-5.png) no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.data {
+    &__container {
+        align-items: center;
+        padding: 110px 0;
+
+        .line {
+            width: 5px;
+            height: 263px;
+            background: $mainColor;
+            margin-left: 75px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-align: left;
+            margin-right: 130px;
+        }
+
+        .data-content {
+            @include flex($ai: center);
+            width: 52%;
+            background: $bgColor;
+            padding: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px 0px 0px 30px;
+
+            .vertical-line {
+                width: 2px;
+                height: 146px;
+                background: #fff;
+                margin-right: 10px;
+            }
+
+            .data-item {
+                @include flex($ai: center, $fd: column, $jc: flex-start);
+                text-align: center;
+                width: 30%;
+                min-height: 240px;
+
+                p:not(.percent) {
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+
+                .percent {
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: $mainColor;
+
+                    span {
+                        font-size: 70px;
+                        line-height: 85px;
+                        margin-left: 10px;
+                    }
+                }
+
+                div {
+                    height: 2px;
+                    width: 158px;
+                    background: #fff;
+                }
+
+                .first-line {
+                    margin-top: 15px;
+                }
+                .second-line {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.consultation {
+    @include flex($fd: column, $jc: center, $ai: center);
+    background: url(@img/footer/footer.png) no-repeat;
+    background-size: cover;
+    height: 398px;
+    width: 100%;
+    color: #fff;
+
+    h2 {
+        font-weight: 800;
+    }
+
+    p {
+        margin: 20px 0 60px;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    form {
+        input {
+            height: 57px;
+            border-radius: 5px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+        input:not(input[type='submit']) {
+            width: 398px;
+            padding: 20px;
+        }
+
+        input[type='submit'] {
+            width: 250px;
+            background: $bgColor;
+            text-transform: uppercase;
+            color: $mainColor;
+            font-weight: 700;
+            font-size: 18px;
+
+            &:hover {
+                border: 2px solid #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.htm',{ "title":"Golden Property Solution" })
+    <body>
+        <section class="wrapper">
+            @@include('html/_header.htm',{})
+            <main class="page">
+                <section class="home">
+					<div class="home__container">
+						<div class="first-column">
+							<h1>Недвижимость</h1>
+							<h3>в Объединенных Арабских Эмиратах</h3>
+							<div></div>
+							<h2>Лучшая инвестиция!</h2>
+							<p>Компания <span>Golden Property Soulution</span>  предлагаетподбор и продажу инвестиционной недвижимости</p>
+							<p>В РАССРОЧКУ НА 3-5 ЛЕТ!</p>
+						</div>
+						<div class="second-column">
+							<form action="">
+								<div class="text-wrapper">
+									<p>Получите</p>
+									<p>консультацию специалиста</p>
+									<p>по недвижимости в дубае</p>
+								</div>
+								<div class="input-wrapper">
+									<input type="text" placeholder="Введите имя" required>
+									<input type="tel" placeholder="Введите телефон" required>
+								</div>
+								<input type="submit" value="Получить консультацию">
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section class="advantage">
+					<div class="advantage__container">
+						<h2>Наши преимущества</h2>
+						<div>
+							<img src="@img/icons/bitcoin.svg" alt="bitcoin">
+							<p>Принимаем <br> Bitcoin</p>
+						</div>
+						<div>
+							<img src="@img/icons/list.svg" alt="list">
+							<p>Рассрочка <br> на 3-5 лет</p>
+						</div>
+						<div>
+							<img src="@img/icons/home.svg" alt="home">
+							<p>Управление недвижимостью <br> после покупки</p>
+						</div>
+						<div>
+							<img src="@img/icons/income.svg" alt="income">
+							<p>Инвестионный доход <br> до 15% годовых</p>
+						</div>
+						<div>
+							<img src="@img/icons/visa.svg" alt="visa">
+							<p>Получение резидентской <br> визы на 2 года</p>
+						</div>
+						<div>
+							<img src="@img/icons/bank.svg" alt="bank">
+							<p>Возможность взять кредит <br> в банках Дубая</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="props">
+					<div class="props__container">
+						<h2>Виды недвижимости, которые мы продаем</h2>
+						<div class="content-wrapper">
+							<div class="studies">
+								<h4>Студии</h4>
+								<button>Узнать подробнее</button>
+							</div>
+							<div class="apartments">
+								<h4>Апартаменты</h4>
+								<button>Узнать подробнее</button>
+							</div>
+							<div class="penthouse">
+								<h4>Пентхаусы</h4>
+								<button>Узнать подробнее</button>
+							</div>
+							<div class="townhouses">
+								<h4>Таунхаусы</h4>
+								<button>Узнать подробнее</button>
+							</div>
+							<div class="villa">
+								<h4>Виллы</h4>
+								<button>Узнать подробнее</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="data">
+					<div class="data__container">
+						<div class="line"></div>
+						<h2>Усредненные данные <br> по инвестициям <br> в недвижимость Дубая</h2>
+						<div class="data-content">
+							<div class="data-item">
+								<p>Первый <br> взнос</p>
+								<div class="first-line"></div>
+								<p class="percent">от<span>5%</span></p>
+								<div class="second-line"></div>
+								<p>стоимости недвижимости</p>
+							</div>
+							<div class="vertical-line"></div>
+							<div class="data-item">
+								<p>Средний <br> ROI</p>
+								<div class="first-line"></div>
+								<p class="percent"><span>10%</span></p>
+								<div class="second-line"></div>
+								<p>годовых</p>
+							</div>
+							<div class="vertical-line"></div>
+							<div class="data-item">
+								<p>Рост стоимости недвижимости</p>
+								<div class="first-line"></div>
+								<p class="percent">от<span>10%</span></p>
+								<div class="second-line"></div>
+								<p>годовых</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="consultation">
+					<a name="form"></a>
+					<h2>Получите консультацию специалиста</h2>
+					<p>по недвижимости в Дубае</p>
+					<form action="">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Имя"
+							required
+						/>
+						<input
+							type="tel"
+							name="tel"
+							id="tel"
+							placeholder="Номер телефона"
+							required
+						/>
+						<input type="submit" value="Отправить" />
+					</form>
+				</section>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_js.htm',{})
+    </body>
+</html>

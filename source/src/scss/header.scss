@@ -1,0 +1,44 @@
+.header {
+    &__container {
+        min-height: 160px;
+        padding: 20px 157px 0;
+
+        section {
+            @include flex;
+
+            .logo {
+                width: 206px;
+                height: 80px;
+            }
+
+            div {
+                background: #3b393c;
+                width: 2px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 14px;
+                margin-left: 45px;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .phone-icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            &:last-child {
+                align-items: center;
+
+                .phone {
+                    font-weight: 600;
+                    margin-right: 50px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

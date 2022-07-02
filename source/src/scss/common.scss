@@ -1,0 +1,62 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+@mixin flex($jc: space-between, $ai: flex-start, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+[class*='__container'] {
+    @include flex;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 67px;
+    line-height: 70px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 70px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+}
+
+button {
+    background: $bgColor;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+
+    &:hover {
+        border: 2px solid black;
+    }
+}
+button,
+input[type='submit'] {
+    cursor: pointer;
+    border-radius: 43px;
+}
